@@ -1,0 +1,14 @@
+adding new skill workflow
+
+1. add card to enum (card and reward)
+
+2. Create sprite
+
+3. add sprite to getCardSprite()
+4. add sprite to getCardCost()
+5. add sprite to getRewardSprite()
+6. add card to addReward()
+
+7. add skill ghost to ob_skillManager draw event
+
+8. add skill to placeSkill()
