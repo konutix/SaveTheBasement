@@ -97,8 +97,6 @@ if(ob_gameMaster.simulation == true){
 				owner.hp = owner.maxHp;
 		}
 
-		ShakeScreen(15);
-
 		instance_destroy();
 
 	}
@@ -115,8 +113,6 @@ if(ob_gameMaster.simulation == true){
 			if(owner.hp > owner.maxHp)
 				owner.hp = owner.maxHp;
 		}
-
-		ShakeScreen(15);
 
 		instance_destroy();
 
