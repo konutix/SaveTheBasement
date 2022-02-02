@@ -90,7 +90,7 @@ switch(state){
 			
 			for(var i = 0; i < ds_list_size(hand); i++){
 	
-				drawCard = instance_create_layer(100, room_height - 100, "cards", ob_pickableCard);
+				drawCard = instance_create_layer(100, room_height - 120, "cards", ob_pickableCard);
 				drawCard.targetX = cardsX + cardsXseparation * i - cardsXback;
 				drawCard.targetY = cardsY;
 				drawCard.card = ds_list_find_value(hand, i);

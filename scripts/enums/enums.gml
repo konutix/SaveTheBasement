@@ -6,6 +6,7 @@ enum state{
 	locked,
 	
 	//gameMaster
+	mainMenu,
 	map,
 	event,
 	levelLoad,

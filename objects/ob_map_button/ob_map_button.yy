@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_map_battle",
-    "path": "sprites/spr_map_battle/spr_map_battle.yy",
+    "name": "spr_map_button",
+    "path": "sprites/spr_map_button/spr_map_button.yy",
   },
   "solid": false,
   "visible": true,

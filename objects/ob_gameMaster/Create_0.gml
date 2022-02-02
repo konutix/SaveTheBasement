@@ -9,9 +9,9 @@ draw_set_font(fnt_main);
 map_layer = 0;
 
 cardsX = 350;
-cardsXseparation = 80;
+cardsXseparation = 90;
 cardsXback = 0;
-cardsY = 600;
+cardsY = 570;
 
 gold = 0;
 
