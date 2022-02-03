@@ -73,5 +73,5 @@ button41.name = "41";
 var button51 = instance_create_layer(x+20,y+500,"gui",ob_map_button);
 button51.rm = rm_levelFirstBoss;
 button51.image_index = 8;
-button51.previous = button41.name;
+button51.previous = button41.name + "." + button40.name;
 button51.name = "51";
