@@ -5,6 +5,11 @@ if(ob_gameMaster.simulation == true){
 	x += velX;
 	y += velY + g * g;
 	
+	if(!startSoundPlayed){
+		audio_play_sound(SFX_Woosh_01,1,false);
+		startSoundPlayed = true;
+	}
+	
 	velY += g;
 	if(velY > 10)
 		velY = 10;
@@ -26,6 +31,10 @@ if(ob_gameMaster.simulation == true){
 		grounded.image_xscale = image_xscale;
 		grounded.image_yscale = image_yscale;
 		grounded.image_index = image_index;
+		
+		ShakeScreen(35);
+		audio_play_sound(SFX_BoulderHit_01,1,false);
+		
 		instance_destroy();
 
 	}
@@ -41,7 +50,13 @@ if(ob_gameMaster.simulation == true){
 		}
 	
 		hp--;
-		image_index = 1;
+		
+		if(hp < 3){
+			image_index = 1;
+		}
+		
+		ShakeScreen(35);
+		audio_play_sound(SFX_BoulderHit_01,1,false);
 		
 		if(hp <= 0)
 			instance_destroy();
@@ -63,6 +78,10 @@ if(ob_gameMaster.simulation == true){
 		grounded.image_xscale = image_xscale;
 		grounded.image_yscale = image_yscale;
 		grounded.image_index = image_index;
+		
+		ShakeScreen(35);
+		audio_play_sound(SFX_BoulderHit_01,1,false);
+		
 		instance_destroy();
 
 	}
@@ -77,8 +96,12 @@ if(ob_gameMaster.simulation == true){
 		if(bounceShieldHit.hp <= 0)
 			instance_destroy(bounceShieldHit);
 		
-		hp--;
-		image_index = 1;
+		if(hp < 3){
+			image_index = 1;
+		}
+		
+		ShakeScreen(35);
+		audio_play_sound(SFX_BoulderHit_01,1,false);
 		
 		if(hp <= 0)
 			instance_destroy();
@@ -93,7 +116,15 @@ if(ob_gameMaster.simulation == true){
 		if(destroyShieldHit.hp <= 0)
 			instance_destroy(destroyShieldHit);
 		
-		instance_destroy();
+		if(hp < 3){
+			image_index = 1;
+		}
+		
+		ShakeScreen(35);
+		audio_play_sound(SFX_BoulderHit_01,1,false);
+		
+		if(hp <= 0)
+			instance_destroy();
 	}
 
 	//enemy collisions
@@ -108,6 +139,10 @@ if(ob_gameMaster.simulation == true){
 			if(owner.hp > owner.maxHp)
 				owner.hp = owner.maxHp;
 		}
+		
+		ShakeScreen(35);
+		audio_play_sound(SFX_BoulderHit_01,1,false);
+		audio_play_sound(SFX_EnemyHitConfirm_01,1,false);
 		
 		instance_destroy();
 
@@ -125,6 +160,10 @@ if(ob_gameMaster.simulation == true){
 			if(owner.hp > owner.maxHp)
 				owner.hp = owner.maxHp;
 		}
+		
+		ShakeScreen(35);
+		audio_play_sound(SFX_BoulderHit_01,1,false);
+		audio_play_sound(SFX_PlayerDamage_01,1,false);
 		
 		instance_destroy();
 

@@ -38,7 +38,6 @@ switch(state){
 		
 			state = state.levelRewards;
 			playerHp = ob_player.hp;
-			map_layer ++;
 			room_goto(rm_rewards);
 			
 		}else{
@@ -105,7 +104,7 @@ switch(state){
 			}
 	
 			//spawning end turn button
-			instance_create_layer(room_width - sprite_get_width(spr_endTurn) - 120, cardsY - 55, "cards", ob_endTurn);
+			instance_create_layer(room_width - sprite_get_width(spr_endTurn) - 120, cardsY - 35, "cards", ob_endTurn);
 	
 			state = state.levelPickingCard;
 		}
@@ -143,5 +142,13 @@ if(screenShake){
 }else{
 
 	camera_set_view_pos(view_camera[0], 0, 0);
+
+}
+
+if(keyboard_check_pressed(ord("P"))){
+
+	with(ob_enemy){
+		instance_destroy();
+	}
 
 }

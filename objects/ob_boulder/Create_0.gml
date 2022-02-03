@@ -1,9 +1,10 @@
 /// @description bullet setup
+startSoundPlayed = false;
 
 image_xscale = .6;
 image_yscale = .6;
 
-hp = 2;
+hp = 5;
 
 spd = 5;
 

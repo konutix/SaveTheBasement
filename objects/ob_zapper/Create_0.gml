@@ -1,5 +1,7 @@
 /// @description bullet setup
 
+startSoundPlayed = false;
+
 spd = 5;
 
 g = .1;

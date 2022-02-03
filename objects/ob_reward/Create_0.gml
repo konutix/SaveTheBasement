@@ -2,4 +2,6 @@
 
 selected = false;
 
+description = noone;
+
 reward = reward.null;

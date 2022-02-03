@@ -4,6 +4,11 @@ if(ob_gameMaster.simulation == true){
 
 	part_type_orientation(global.ptOpeningShotTrail, image_angle, image_angle, 0, 0, 0);
 	part_particles_create(global.partSystem, x, y, global.ptOpeningShotTrail, 1);
+	
+	if(!startSoundPlayed){
+		audio_play_sound(SFX_Woosh_01,1,false);
+		startSoundPlayed = true;
+	}
 
 	x += velX;
 	y += velY + g * g;
@@ -26,6 +31,8 @@ if(ob_gameMaster.simulation == true){
 		velX = 0;
 		velY = 0;
 		
+		audio_play_sound(SFX_ArrowHit_01,1,false);
+		
 		instance_destroy();
 
 	}
@@ -44,6 +51,8 @@ if(ob_gameMaster.simulation == true){
 		
 		if(hp <= 0)
 			instance_destroy();
+			
+		audio_play_sound(SFX_ArrowHit_01,1,false);
 
 	}
 	
@@ -56,6 +65,8 @@ if(ob_gameMaster.simulation == true){
 		
 		velX = 0;
 		velY = 0;
+		
+		audio_play_sound(SFX_ArrowHit_01,1,false);
 		
 		instance_destroy();
 
@@ -73,6 +84,8 @@ if(ob_gameMaster.simulation == true){
 		
 		hp--;
 		
+		audio_play_sound(SFX_ArrowHit_01,1,false);
+		
 		if(hp <= 0)
 			instance_destroy();
 	}
@@ -85,6 +98,8 @@ if(ob_gameMaster.simulation == true){
 		
 		if(destroyShieldHit.hp <= 0)
 			instance_destroy(destroyShieldHit);
+		
+		audio_play_sound(SFX_ArrowHit_01,1,false);
 		
 		instance_destroy();
 	}
@@ -104,6 +119,8 @@ if(ob_gameMaster.simulation == true){
 			if(owner.hp > owner.maxHp)
 				owner.hp = owner.maxHp;
 		}
+		
+		audio_play_sound(SFX_EnemyHitConfirm_01,1,false);
 		
 		instance_destroy();
 
@@ -126,6 +143,8 @@ if(ob_gameMaster.simulation == true){
 			if(owner.hp > owner.maxHp)
 				owner.hp = owner.maxHp;
 		}
+
+		audio_play_sound(SFX_PlayerDamage_01,1,false);
 
 		instance_destroy();
 

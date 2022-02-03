@@ -1,7 +1,5 @@
 function dealDamage(dealer, target){
 
-	ShakeScreen(15);
-
 	part_particles_create(global.partSystem, x, y, global.ptBlood, 20);
 
 	if(target.barrier <= 0){

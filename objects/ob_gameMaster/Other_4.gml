@@ -16,4 +16,6 @@ if(roomType = roomType.level){
 
 	state = state.levelLoad;
 	
+	instance_create_layer(room_width - 120, 50, "gui", ob_levelBackToMenu);
+	
 }

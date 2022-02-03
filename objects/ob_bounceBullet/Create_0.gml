@@ -1,4 +1,5 @@
 /// @description bullet setup
+startSoundPlayed = false;
 
 image_xscale = .3;
 image_yscale = .3;

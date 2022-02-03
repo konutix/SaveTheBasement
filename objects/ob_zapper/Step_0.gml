@@ -2,6 +2,11 @@
 
 if(!grounded && ob_gameMaster.simulation == true){
 
+	if(!startSoundPlayed){
+		audio_play_sound(SFX_Woosh_01,1,false);
+		startSoundPlayed = true;
+	}
+
 	x += velX;
 	y += velY + g * g;
 	
@@ -25,6 +30,7 @@ if(!grounded && ob_gameMaster.simulation == true){
 		
 		grounded = true;
 		state = state.zap;
+		audio_play_sound(SFX_Zapper_01,1,false);
 
 	}
 	
@@ -46,6 +52,7 @@ if(!grounded && ob_gameMaster.simulation == true){
 		
 		grounded = true;
 		state = state.zap;
+		audio_play_sound(SFX_Zapper_01,1,false);
 
 	}
 	
@@ -61,6 +68,7 @@ if(!grounded && ob_gameMaster.simulation == true){
 		
 		grounded = true;
 		state = state.zap;
+		audio_play_sound(SFX_Zapper_01,1,false);
 
 	}
 
@@ -77,6 +85,7 @@ if(!grounded && ob_gameMaster.simulation == true){
 		
 		grounded = true;
 		state = state.zap;
+		audio_play_sound(SFX_Zapper_01,1,false);
 		
 	}
 	
@@ -105,6 +114,7 @@ if(!grounded && ob_gameMaster.simulation == true){
 		
 		grounded = true;
 		state = state.zap;
+		audio_play_sound(SFX_Zapper_01,1,false);
 
 	}
 	
@@ -121,6 +131,7 @@ if(!grounded && ob_gameMaster.simulation == true){
 		
 		grounded = true;
 		state = state.zap;
+		audio_play_sound(SFX_Zapper_01,1,false);
 
 	}
 

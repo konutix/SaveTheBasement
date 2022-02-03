@@ -6,7 +6,7 @@ screenShake = false;
 draw_set_font(fnt_main);
 
 //map controll
-map_layer = 0;
+last_level = "null";
 
 cardsX = 350;
 cardsXseparation = 90;
@@ -53,10 +53,10 @@ ds_list_add(deck,
 		card.shieldingWallDestroy,
 		
 		card.baseBolt,
+		card.splittingBullet,
 		
 		card.vampiricThirst
 		);
 	
 
 global.partSystem = part_system_create_layer("Instances",1);
-global.partSystemGui = part_system_create_layer("Gui",1);

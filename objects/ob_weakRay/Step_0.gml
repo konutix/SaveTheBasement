@@ -2,6 +2,11 @@
 
 if(ob_gameMaster.simulation == true){
 
+	if(!startSoundPlayed){
+		audio_play_sound(SFX_WeakeningRayCast_01,1,false);
+		startSoundPlayed = true;
+	}
+
 	if(sprite_index != spr_weakeningRay){
 		sprite_index = spr_weakeningRay;
 	}
@@ -25,6 +30,8 @@ if(ob_gameMaster.simulation == true){
 		if(found == -1){
 		
 			ds_list_add(hitTargets, hit);
+			
+			audio_play_sound(SFX_WeakeningRayHit_01,1,false);
 			
 			hit.weak += 3;
 		

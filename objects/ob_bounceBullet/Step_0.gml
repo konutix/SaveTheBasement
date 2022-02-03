@@ -3,6 +3,11 @@
 if(ob_gameMaster.simulation == true){
 
 	part_particles_create(global.partSystem, x, y, global.ptBulletTrail, 1);
+	
+	if(!startSoundPlayed){
+		audio_play_sound(SFX_Woosh_01,1,false);
+		startSoundPlayed = true;
+	}
 
 	x += velX;
 	y += velY;
@@ -21,12 +26,16 @@ if(ob_gameMaster.simulation == true){
 	
 		velX = wx - ux;
 		velY = wy - uy;
+		
+		audio_play_sound(SFX_BallBounce_01,1,false);
 
 	}
 	
 	wallHit = instance_place(x,y,ob_wall);
 
 	if(wallHit != noone){
+	
+		ShakeScreen(5);
 	
 		instance_destroy();
 
@@ -41,6 +50,9 @@ if(ob_gameMaster.simulation == true){
 		if(breakableWallHit.hp <= 0){
 			instance_destroy(breakableWallHit);
 		}
+	
+		audio_play_sound(SFX_ArrowHit_01,1,false);
+		ShakeScreen(10);
 	
 		instance_destroy();
 
@@ -67,6 +79,8 @@ if(ob_gameMaster.simulation == true){
 		
 		if(bounceShieldHit.hp <= 0)
 			instance_destroy(bounceShieldHit);
+			
+		audio_play_sound(SFX_ShieldBounce_01,1,false);
 
 	}
 	
@@ -79,6 +93,9 @@ if(ob_gameMaster.simulation == true){
 		
 		if(destroyShieldHit.hp <= 0)
 			instance_destroy(destroyShieldHit);
+		
+		ShakeScreen(10);
+		audio_play_sound(SFX_ShieldBreak_01,1,false);
 		
 		instance_destroy();
 
@@ -97,6 +114,9 @@ if(ob_gameMaster.simulation == true){
 				owner.hp = owner.maxHp;
 		}
 
+		ShakeScreen(15);
+		audio_play_sound(SFX_EnemyHitConfirm_01,1,false);
+
 		instance_destroy();
 
 	}
@@ -113,6 +133,9 @@ if(ob_gameMaster.simulation == true){
 			if(owner.hp > owner.maxHp)
 				owner.hp = owner.maxHp;
 		}
+
+		ShakeScreen(15);
+		audio_play_sound(SFX_PlayerDamage_01,1,false);
 
 		instance_destroy();
 

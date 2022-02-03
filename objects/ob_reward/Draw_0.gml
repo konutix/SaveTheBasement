@@ -14,3 +14,21 @@ else if(collision_point(mouse_x, mouse_y, self, 0, false)){
 }
 
 draw_self();
+
+if(collision_point(mouse_x, mouse_y, self, 0, false)){
+			
+	if(description == noone){
+		description = instance_create_layer(
+			x-sprite_get_width(spr_card_description)/2+sprite_width/2,
+			y-sprite_get_height(spr_card_description)-sprite_height/2,
+			"cardsDesc",ob_card_decription);
+			
+		description.description = getRewardDescription(reward);
+	}
+
+}else{
+	if(description != noone){
+		instance_destroy(description);
+		description = noone;
+	}
+}

@@ -27,3 +27,5 @@ shotX = x;
 shotY = y - sprite_height/2;
 
 instance_create_layer(0,0,"gui", ob_skillsManager);
+
+heartbeat = false;

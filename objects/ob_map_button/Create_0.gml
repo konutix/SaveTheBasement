@@ -1,12 +1,13 @@
 /// @description setup
+name = "null"
 
-map_layer = 0;
+previous = "null";
 
 rm = rm_level0;
 
 baseScale = 0.6;
 scale = baseScale;
-scaleWiggle = 0.3;
+scaleWiggle = 0.2;
 
 scaleSpd = 0.01;
 scaleDir = 1;

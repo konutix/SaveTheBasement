@@ -2,6 +2,8 @@
 
 draw_self();
 
+draw_sprite(spr_bomb,4-timer,x+5,y-30);
+
 if(variable_instance_exists(self, "hp")){
 
 	draw_rectangle_color(x - sprite_width/2,

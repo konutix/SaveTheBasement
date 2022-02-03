@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "map controlls",
-    "path": "folders/Sprites/map controlls.yy",
+    "path": "folders/Sprites/gui/map controlls.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_connection",

@@ -26,6 +26,7 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"53297a15-421e-42cf-8a8e-9f38859211ee","path":"sprites/spr_reward_vampirism/spr_reward_vampirism.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"53297a15-421e-42cf-8a8e-9f38859211ee","path":"sprites/spr_reward_vampirism/spr_reward_vampirism.yy",},"LayerId":{"name":"5ce213d3-58b5-48f8-a411-9d2594cb5979","path":"sprites/spr_reward_vampirism/spr_reward_vampirism.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"53297a15-421e-42cf-8a8e-9f38859211ee","path":"sprites/spr_reward_vampirism/spr_reward_vampirism.yy",},"LayerId":{"name":"93afe5ce-93a4-463e-9ede-1f721388af11","path":"sprites/spr_reward_vampirism/spr_reward_vampirism.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_reward_vampirism","path":"sprites/spr_reward_vampirism/spr_reward_vampirism.yy",},"resourceVersion":"1.0","name":"53297a15-421e-42cf-8a8e-9f38859211ee","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -65,6 +66,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"93afe5ce-93a4-463e-9ede-1f721388af11","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5ce213d3-58b5-48f8-a411-9d2594cb5979","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,

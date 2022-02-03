@@ -1,5 +1,7 @@
 /// @description bullet setup
 
+startSoundPlayed = false;
+
 growthRate = .17;
 
 spd = 8;

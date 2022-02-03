@@ -25,7 +25,7 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"53297a15-421e-42cf-8a8e-9f38859211ee","path":"sprites/spr_reward_heal/spr_reward_heal.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"53297a15-421e-42cf-8a8e-9f38859211ee","path":"sprites/spr_reward_heal/spr_reward_heal.yy",},"LayerId":{"name":"5ce213d3-58b5-48f8-a411-9d2594cb5979","path":"sprites/spr_reward_heal/spr_reward_heal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"53297a15-421e-42cf-8a8e-9f38859211ee","path":"sprites/spr_reward_heal/spr_reward_heal.yy",},"LayerId":{"name":"1cb05570-6c43-45e4-8d33-6b46f0167370","path":"sprites/spr_reward_heal/spr_reward_heal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_reward_heal","path":"sprites/spr_reward_heal/spr_reward_heal.yy",},"resourceVersion":"1.0","name":"53297a15-421e-42cf-8a8e-9f38859211ee","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5ce213d3-58b5-48f8-a411-9d2594cb5979","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default (2)","resourceVersion":"1.0","name":"1cb05570-6c43-45e4-8d33-6b46f0167370","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
