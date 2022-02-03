@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"53297a15-421e-42cf-8a8e-9f38859211ee","path":"sprites/spr_reward_energy/spr_reward_energy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"53297a15-421e-42cf-8a8e-9f38859211ee","path":"sprites/spr_reward_energy/spr_reward_energy.yy",},"LayerId":{"name":"5ce213d3-58b5-48f8-a411-9d2594cb5979","path":"sprites/spr_reward_energy/spr_reward_energy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"53297a15-421e-42cf-8a8e-9f38859211ee","path":"sprites/spr_reward_energy/spr_reward_energy.yy",},"LayerId":{"name":"a52111cd-7b2d-4590-b851-4cb18420091e","path":"sprites/spr_reward_energy/spr_reward_energy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"53297a15-421e-42cf-8a8e-9f38859211ee","path":"sprites/spr_reward_energy/spr_reward_energy.yy",},"LayerId":{"name":"5ce213d3-58b5-48f8-a411-9d2594cb5979","path":"sprites/spr_reward_energy/spr_reward_energy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_reward_energy","path":"sprites/spr_reward_energy/spr_reward_energy.yy",},"resourceVersion":"1.0","name":"53297a15-421e-42cf-8a8e-9f38859211ee","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {

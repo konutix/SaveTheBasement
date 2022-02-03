@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite29",
-    "path": "sprites/Sprite29/Sprite29.yy",
+    "name": "spr_shopButton",
+    "path": "sprites/spr_shopButton/spr_shopButton.yy",
   },
   "solid": false,
   "visible": true,
