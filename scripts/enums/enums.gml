@@ -42,6 +42,15 @@ enum roomType{
 
 }
 
+enum itemType{
+
+	null,
+	card,
+	upgrade,
+	item
+
+}
+
 enum card{
 
 	//cards

@@ -13,3 +13,5 @@ with(ob_projectile){
 	}
 
 }
+
+turnCounter += 1;

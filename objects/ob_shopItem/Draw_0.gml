@@ -8,8 +8,20 @@ if(selected){
 }
 else if(collision_point(mouse_x, mouse_y, self, 0, false)){
 
-	draw_rectangle_color(
-			x-10,y-10,x+sprite_width+10,y+sprite_height+10,c_yellow,c_yellow,c_yellow,c_yellow,false);
+	if(type == itemType.card){
+		draw_sprite_ext(spr_cardBackground,0,x-14,y-14,1.1,1.1,0,c_yellow,1);
+	}else{
+
+		draw_rectangle_color(
+				x-10,y-10,x+sprite_width+10,y+sprite_height+10,c_yellow,c_yellow,c_yellow,c_yellow,false);
+	}
+
+}
+
+if(type == itemType.card){
+
+	draw_sprite(spr_cardBackground,0,x-8,y-8);
+	draw_text_color(x+10,y+sprite_height+12,(getRewardCardCost(reward)),c_blue,c_blue,c_blue,c_blue,1);
 
 }
 

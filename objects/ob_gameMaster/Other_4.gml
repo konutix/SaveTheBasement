@@ -1,6 +1,12 @@
 /// @description setup fight
 
-if(roomType = roomType.level){
+if(roomType == roomType.level || roomType == roomType.map){
+	
+	instance_create_layer(0,-32,"cardsDesc",ob_topBar)
+	
+}
+
+if(roomType == roomType.level){
 	
 	//copying deck to draw pile and shuffling
 	drawPile = ds_list_create();
@@ -15,6 +21,8 @@ if(roomType = roomType.level){
 	destroyed = ds_list_create();
 
 	state = state.levelLoad;
+	
+	turnCounter = 0;
 	
 	instance_create_layer(room_width - 120, 40, "gui", ob_levelBackToMenu);
 	

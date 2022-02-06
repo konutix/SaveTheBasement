@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "getters",
+    "path": "folders/Scripts/getters.yy",
   },
   "resourceVersion": "1.0",
   "name": "getCardSprite",

@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "rewards",
-    "path": "folders/Objects/gui/rewards.yy",
+    "name": "shop",
+    "path": "folders/Objects/gui/shop.yy",
   },
   "resourceVersion": "1.0",
   "name": "ob_shopWindow",

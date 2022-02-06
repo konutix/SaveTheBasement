@@ -37,6 +37,8 @@ enemies = 0;
 simulation = false;
 turnDuration = 300;
 
+turnCounter = 0;
+
 deck = ds_list_create()
 
 ds_list_add(deck,
@@ -56,40 +58,6 @@ ds_list_add(deck,
 		card.splittingBullet,
 		
 		card.vampiricThirst,
-		////////
-		card.baseBullet,
-		card.baseBullet,
-		card.baseBullet,
-		card.baseBullet,
-		
-		card.shieldingWallBounce,
-		card.shieldingWallBounce,
-		card.shieldingWallBounce,
-		
-		card.shieldingWallDestroy,
-		card.shieldingWallDestroy,
-		
-		card.baseBolt,
-		card.splittingBullet,
-		
-		card.vampiricThirst,
-		
-		card.baseBullet,
-		card.baseBullet,
-		card.baseBullet,
-		card.baseBullet,
-		
-		card.shieldingWallBounce,
-		card.shieldingWallBounce,
-		card.shieldingWallBounce,
-		
-		card.shieldingWallDestroy,
-		card.shieldingWallDestroy,
-		
-		card.baseBolt,
-		card.splittingBullet,
-		
-		card.vampiricThirst
 		);
 	
 

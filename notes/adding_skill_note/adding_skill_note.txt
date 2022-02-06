@@ -7,7 +7,13 @@ adding new skill workflow
 3. add sprite to getCardSprite()
 4. add sprite to getCardCost()
 5. add sprite to getRewardSprite()
-6. add card to addReward()
+6.1 add card to addReward()
+6.2 add card to ob_rewardGiver
+6.3 add card to ob_shopWindow
+6.4 add card to getCardDescription()
+6.5 add card to getRewardDescription()
+6.6 add card to getRewardType()
+6.7 add card to getShopItemCost()
 
 7. add skill ghost to ob_skillManager draw event
 

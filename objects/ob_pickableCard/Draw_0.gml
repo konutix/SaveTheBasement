@@ -1,8 +1,8 @@
 /// @description draw self and selection
 if(used){
 	
-	draw_rectangle_color(
-			x-10,y-10,x+sprite_width+10,y+sprite_height+50,c_white,c_white,c_white,c_white,false);
+	draw_set_alpha(0.5);
+	image_alpha = 0.5;
 	
 }
 else if(selected){
@@ -11,15 +11,14 @@ else if(selected){
 			x-10,y-10,x+sprite_width+10,y+sprite_height+50,c_green,c_green,c_green,c_green,false);
 	
 }
-else if(placed && collision_point(mouse_x, mouse_y, self, 0, false)){
-
-	draw_rectangle_color(
-			x-10,y-10,x+sprite_width+10,y+sprite_height+50,c_yellow,c_yellow,c_yellow,c_yellow,false);
+else if(placed && checkCardColl()){
+			
+	draw_sprite_ext(spr_cardBackground,0,x-14,y-14,1.1,1.1,0,c_yellow,1);
 
 }
 
 //spawn description
-if(placed && collision_point(mouse_x, mouse_y, self, 0, false)){
+if(placed && checkCardColl()){
 			
 	if(description == noone){
 		description = instance_create_layer(
@@ -46,3 +45,6 @@ if(cost - ob_gameMaster.costDown <= 1){
 }else{
 	draw_text_color(x+10,y+sprite_height+12,(cost - ob_gameMaster.costDown),c_blue,c_blue,c_blue,c_blue,1);
 }
+
+draw_set_alpha(1);
+image_alpha = 1;

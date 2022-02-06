@@ -1,7 +1,7 @@
 /// @description actions
 
 if(placed){
-	if(mouse_check_button_pressed(mb_left) && !used && collision_point(mouse_x, mouse_y, self, 0, false)){
+	if(mouse_check_button_pressed(mb_left) && !used && checkCardColl()){
 
 		//deselect others
 		with(ob_pickableCard){
@@ -16,7 +16,7 @@ if(placed){
 
 	}
 
-	if(mouse_check_button_pressed(mb_right) && collision_point(mouse_x, mouse_y, self, 0, false) 
+	if(mouse_check_button_pressed(mb_right) && checkCardColl()
 			&& selected && ob_skillsManager.state != state.charging){
 	
 		selected = false;
@@ -26,7 +26,7 @@ if(placed){
 	
 	}
 
-	if(mouse_check_button_pressed(mb_right) && collision_point(mouse_x, mouse_y, self, 0, false) 
+	if(mouse_check_button_pressed(mb_right) && checkCardColl()
 			&& used && ob_skillsManager.state != state.charging){
 	
 		//deselect others
