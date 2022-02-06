@@ -55,6 +55,40 @@ ds_list_add(deck,
 		card.baseBolt,
 		card.splittingBullet,
 		
+		card.vampiricThirst,
+		////////
+		card.baseBullet,
+		card.baseBullet,
+		card.baseBullet,
+		card.baseBullet,
+		
+		card.shieldingWallBounce,
+		card.shieldingWallBounce,
+		card.shieldingWallBounce,
+		
+		card.shieldingWallDestroy,
+		card.shieldingWallDestroy,
+		
+		card.baseBolt,
+		card.splittingBullet,
+		
+		card.vampiricThirst,
+		
+		card.baseBullet,
+		card.baseBullet,
+		card.baseBullet,
+		card.baseBullet,
+		
+		card.shieldingWallBounce,
+		card.shieldingWallBounce,
+		card.shieldingWallBounce,
+		
+		card.shieldingWallDestroy,
+		card.shieldingWallDestroy,
+		
+		card.baseBolt,
+		card.splittingBullet,
+		
 		card.vampiricThirst
 		);
 	

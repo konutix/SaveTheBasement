@@ -4,4 +4,5 @@ if(instance_exists(ob_gameMaster)){
 	}
 }
 
+audio_stop_all();
 audio_play_sound(SFX_ambient_01, 3, true);

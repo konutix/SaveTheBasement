@@ -22,7 +22,13 @@ enum state{
 	
 	//zapper
 	zap,
-	zapping
+	zapping,
+	
+	//topbar
+	hidden,
+	expanding,
+	expanded,
+	hiding
 
 }
 

@@ -89,8 +89,8 @@ if(ob_gameMaster.simulation == true){
 
 	if(bounceShieldHit != noone){
 	
-		ux = dot_product(velX,velY,wallHit.normalX,wallHit.normalY) * wallHit.normalX;
-		uy = dot_product(velX,velY,wallHit.normalX,wallHit.normalY) * wallHit.normalY;
+		ux = dot_product(velX,velY,bounceShieldHit.normalX,bounceShieldHit.normalY) * bounceShieldHit.normalX;
+		uy = dot_product(velX,velY,bounceShieldHit.normalX,bounceShieldHit.normalY) * bounceShieldHit.normalY;
 	
 		wx = velX - ux;
 		wy = velY - uy;
@@ -98,7 +98,7 @@ if(ob_gameMaster.simulation == true){
 		bounceVecX = wx - ux;
 		bounceVecY = wy - uy;
 		
-		var angleToNormal = angle_difference(point_direction(0,0,bounceVecX,bounceVecY), point_direction(0,0,wallHit.normalX,wallHit.normalY));
+		var angleToNormal = angle_difference(point_direction(0,0,bounceVecX,bounceVecY), point_direction(0,0,bounceShieldHit.normalX,bounceShieldHit.normalY));
 		var angleToWall = 90 - abs(angleToNormal);
 	
 		split1 = instance_create_layer(x,y,"actionInstances",ob_bounceBullet);

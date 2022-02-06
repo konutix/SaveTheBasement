@@ -112,6 +112,7 @@ switch(state){
 	break;
 	
 	case state.levelPickingCard:
+	case state.levelUsing:
 	
 		usedEnergy = 0;
 	
