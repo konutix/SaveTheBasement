@@ -3,6 +3,7 @@
 if(placed){
 	if(mouse_check_button_pressed(mb_left) && !used && checkCardColl()){
 
+		
 		//deselect others
 		with(ob_pickableCard){
 			selected = false;
@@ -10,10 +11,15 @@ if(placed){
 
 		//select card
 		selected = true;
-		ob_skillsManager.activeCard = self;
-		ob_skillsManager.state = state.free;
-		ob_gameMaster.state = state.levelUsing;
-
+		if(calcUsedCardsCost(cost) > ob_player.energy) {
+			selected = false;
+			audio_play_sound(SFX_MenuClick_02, 1, false);
+		} else {
+		
+			ob_skillsManager.activeCard = self;
+			ob_skillsManager.state = state.free;
+			ob_gameMaster.state = state.levelUsing;
+		}
 	}
 
 	if(mouse_check_button_pressed(mb_right) && checkCardColl()

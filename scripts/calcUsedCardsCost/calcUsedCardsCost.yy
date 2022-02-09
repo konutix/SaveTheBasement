@@ -6,7 +6,7 @@
     "path": "folders/Scripts/in level.yy",
   },
   "resourceVersion": "1.0",
-  "name": "placeSkill",
+  "name": "calcUsedCardsCost",
   "tags": [],
   "resourceType": "GMScript",
 }

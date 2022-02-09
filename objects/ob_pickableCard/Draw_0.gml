@@ -36,7 +36,11 @@ if(placed && checkCardColl()){
 	}
 }
 
-draw_sprite(spr_cardBackground,0,x-8,y-8);
+if(!selected and !used and (calcUsedCardsCost(cost) > ob_player.energy)) {
+	draw_sprite_ext(spr_cardBackground,0,x-8,y-8, 1, 1, 0, c_red, 0.76);	
+} else {
+	draw_sprite(spr_cardBackground,0,x-8,y-8);
+}
 
 draw_self();
 

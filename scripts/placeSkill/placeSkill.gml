@@ -183,13 +183,17 @@ function placeSkill(){
 			chargeVecX = chargeStartX - mouse_x;
 			chargeVecY = chargeStartY - mouse_y;
 			
-			chargeVecLen = sqrt(chargeVecX * chargeVecX + chargeVecY * chargeVecY);
+			chargeVecLen = max(5,sqrt(chargeVecX * chargeVecX + chargeVecY * chargeVecY));
 				
 			shield.normalX = chargeVecX / chargeVecLen;
 			shield.normalY = chargeVecY / chargeVecLen;
 			
 			shield.image_angle = point_direction(0, 0, shield.normalX, shield.normalY);
 			shield.image_yscale = min(maxCharge, chargeVecLen) / maxCharge;
+			show_debug_message(chargeVecLen);
+			show_debug_message(maxCharge);
+			show_debug_message( min(maxCharge, chargeVecLen) / maxCharge);
+
 			
 			shield.owner = ob_player;
 			
@@ -204,7 +208,7 @@ function placeSkill(){
 			chargeVecX = chargeStartX - mouse_x;
 			chargeVecY = chargeStartY - mouse_y;
 			
-			chargeVecLen = sqrt(chargeVecX * chargeVecX + chargeVecY * chargeVecY);
+			chargeVecLen = max(5,sqrt(chargeVecX * chargeVecX + chargeVecY * chargeVecY));
 				
 			shield.normalX = chargeVecX / chargeVecLen;
 			shield.normalY = chargeVecY / chargeVecLen;

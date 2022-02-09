@@ -34,6 +34,7 @@
     {"id":{"name":"ob_axe","path":"objects/ob_axe/ob_axe.yy",},"order":7,},
     {"id":{"name":"getRewardDescription","path":"scripts/getRewardDescription/getRewardDescription.yy",},"order":3,},
     {"id":{"name":"ob_bolt","path":"objects/ob_bolt/ob_bolt.yy",},"order":1,},
+    {"id":{"name":"calcUsedCardsCost","path":"scripts/calcUsedCardsCost/calcUsedCardsCost.yy",},"order":6,},
     {"id":{"name":"spr_reward_heal","path":"sprites/spr_reward_heal/spr_reward_heal.yy",},"order":2,},
     {"id":{"name":"ob_weakRay","path":"objects/ob_weakRay/ob_weakRay.yy",},"order":11,},
     {"id":{"name":"SFX_BallBounce_01","path":"sounds/SFX_BallBounce_01/SFX_BallBounce_01.yy",},"order":2,},
@@ -52,6 +53,7 @@
     {"id":{"name":"SFX_heart_beat","path":"sounds/SFX_heart_beat/SFX_heart_beat.yy",},"order":2,},
     {"id":{"name":"rm_level2","path":"rooms/rm_level2/rm_level2.yy",},"order":6,},
     {"id":{"name":"spr_costDown","path":"sprites/spr_costDown/spr_costDown.yy",},"order":1,},
+    {"id":{"name":"SFX_MenuClick_02","path":"sounds/SFX_MenuClick_02/SFX_MenuClick_02.yy",},"order":1,},
     {"id":{"name":"spr_shopWindow","path":"sprites/spr_shopWindow/spr_shopWindow.yy",},"order":8,},
     {"id":{"name":"ob_splittingBullet","path":"objects/ob_splittingBullet/ob_splittingBullet.yy",},"order":2,},
     {"id":{"name":"adding_skill_note","path":"notes/adding_skill_note/adding_skill_note.yy",},"order":0,},
@@ -199,6 +201,7 @@
   ],
   "isDnDProject": false,
   "isEcma": false,
+  "tutorialPath": "",
   "configs": {
     "name": "Default",
     "children": [],
@@ -283,7 +286,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.1.0.609",
+    "IDEVersion": "2.3.7.606",
   },
   "resourceVersion": "1.4",
   "name": "SaveTheBasement",
