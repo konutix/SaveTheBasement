@@ -127,6 +127,16 @@ switch(state){
 
 	break;
 	
+	case state.levelSimulating:
+	
+		if(alarm[0] > 30 && instance_number(ob_projectile) == 0){
+		
+			alarm[0] = 30;
+		
+		}
+	
+	break;
+	
 }
 
 if(screenShake){
