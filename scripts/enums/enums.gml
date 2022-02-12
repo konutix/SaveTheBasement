@@ -13,6 +13,7 @@ enum state{
 	levelDrawCards,
 	levelPickingCard,
 	levelUsing,
+	levelShowingDeck,
 	levelSimulating,
 	levelRewards,
 	gameOver,

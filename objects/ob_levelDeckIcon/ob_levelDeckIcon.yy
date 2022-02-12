@@ -35,7 +35,7 @@
     "path": "folders/Objects/gui/deck.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ob_deckIcon",
+  "name": "ob_levelDeckIcon",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,18 +1,22 @@
 /// @description press action
 
-if(collision_point(mouse_x, mouse_y, self, false, false)){
+if(collision_point(mouse_x, mouse_y, self, false, false) && !ob_levelDeckIcon.showDeck){
 
 	if(!showDeck){
 
 		var cardX = cardsStartX;
 		var cardY = cardsStartY;
+		
+		var deckCopy = ds_list_create();
+		
+		ds_list_copy(deckCopy,ob_gameMaster.discarded);
+		
+		ds_list_sort(deckCopy, true);
 
-		ds_list_sort(ob_gameMaster.deck, true);
-
-		for(var i = 0; i < ds_list_size(ob_gameMaster.deck); i++){
+		for(var i = 0; i < ds_list_size(deckCopy); i++){
 	
-			var crd = instance_create_layer(cardX,cardY,"cards",ob_deckShowCard);
-			crd.card = ds_list_find_value(ob_gameMaster.deck, i);
+			var crd = instance_create_depth(cardX,cardY,50,ob_deckShowCard);
+			crd.card = ds_list_find_value(deckCopy, i);
 			crd.sprite_index = getCardSprite(crd.card);
 			
 			cardX += cardsSeparationX;

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_deck",
-    "path": "sprites/spr_deck/spr_deck.yy",
+    "name": "spr_discarded",
+    "path": "sprites/spr_discarded/spr_discarded.yy",
   },
   "solid": false,
   "visible": true,
@@ -35,7 +35,7 @@
     "path": "folders/Objects/gui/deck.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ob_deckIcon",
+  "name": "ob_levelDiscardedIcon",
   "tags": [],
   "resourceType": "GMObject",
 }

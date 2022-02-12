@@ -5,10 +5,19 @@ if(collision_point(mouse_x, mouse_y, self, 0, false)){
 			
 	if(description == noone){
 		
-		description = instance_create_layer(
-			x-sprite_get_width(spr_card_description)/2+sprite_width/2,
-			y-sprite_get_height(spr_card_description)-sprite_height/2,
-			"cardsDesc",ob_card_decription);
+		if(y > room_height/2){
+			
+			description = instance_create_layer(
+				max(0,x-sprite_get_width(spr_card_description)/2+sprite_width/2),
+				y-sprite_get_height(spr_card_description)-sprite_height/2,
+				"cardsDesc",ob_card_decription);
+		}else{
+		
+			description = instance_create_layer(
+				max(0,x-sprite_get_width(spr_card_description)/2+sprite_width/2),
+				y+sprite_get_height(spr_card_description)-sprite_height,
+				"cardsDesc",ob_card_decription);
+		}
 			
 		description.description = getCardDescription(card);
 	}

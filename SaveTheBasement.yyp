@@ -127,6 +127,7 @@
     {"id":{"name":"spr_card_portalDrill","path":"sprites/spr_card_portalDrill/spr_card_portalDrill.yy",},"order":12,},
     {"id":{"name":"rm_levelFirstBoss","path":"rooms/rm_levelFirstBoss/rm_levelFirstBoss.yy",},"order":10,},
     {"id":{"name":"rm_levelTesting","path":"rooms/rm_levelTesting/rm_levelTesting.yy",},"order":5,},
+    {"id":{"name":"ob_levelDeckIcon","path":"objects/ob_levelDeckIcon/ob_levelDeckIcon.yy",},"order":2,},
     {"id":{"name":"ob_bomb","path":"objects/ob_bomb/ob_bomb.yy",},"order":0,},
     {"id":{"name":"ob_breakableWall","path":"objects/ob_breakableWall/ob_breakableWall.yy",},"order":2,},
     {"id":{"name":"ob_shieldingWallBounce","path":"objects/ob_shieldingWallBounce/ob_shieldingWallBounce.yy",},"order":0,},
@@ -161,6 +162,7 @@
     {"id":{"name":"spr_card_shieldingWallDestroy","path":"sprites/spr_card_shieldingWallDestroy/spr_card_shieldingWallDestroy.yy",},"order":3,},
     {"id":{"name":"ob_startGame","path":"objects/ob_startGame/ob_startGame.yy",},"order":0,},
     {"id":{"name":"getRewardType","path":"scripts/getRewardType/getRewardType.yy",},"order":6,},
+    {"id":{"name":"ob_levelDiscardedIcon","path":"objects/ob_levelDiscardedIcon/ob_levelDiscardedIcon.yy",},"order":3,},
     {"id":{"name":"bg_reward","path":"sprites/bg_reward/bg_reward.yy",},"order":1,},
     {"id":{"name":"spr_card_radarBomb","path":"sprites/spr_card_radarBomb/spr_card_radarBomb.yy",},"order":11,},
     {"id":{"name":"ob_reward","path":"objects/ob_reward/ob_reward.yy",},"order":0,},
@@ -201,7 +203,6 @@
   ],
   "isDnDProject": false,
   "isEcma": false,
-  "tutorialPath": "",
   "configs": {
     "name": "Default",
     "children": [],
@@ -286,7 +287,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.7.606",
+    "IDEVersion": "2022.1.1.610",
   },
   "resourceVersion": "1.4",
   "name": "SaveTheBasement",
