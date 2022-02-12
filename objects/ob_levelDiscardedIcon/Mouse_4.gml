@@ -21,7 +21,7 @@ if(collision_point(mouse_x, mouse_y, self, false, false) && !ob_levelDeckIcon.sh
 			
 			cardX += cardsSeparationX;
 			
-			if(cardX >= width - margin){
+			if(cardX >= room_width - margin){
 			
 				cardX = cardsStartX;
 				cardY += cardsSeparationY;
@@ -31,9 +31,15 @@ if(collision_point(mouse_x, mouse_y, self, false, false) && !ob_levelDeckIcon.sh
 	
 		}
 		
+		instance_deactivate_layer("cards");
+		instance_deactivate_layer("gui");
+		
 		showDeck = true;
 	
 	}else{
+	
+		instance_activate_layer("cards")
+		instance_activate_layer("gui")
 	
 		with(ob_deckShowCard){
 			instance_destroy();

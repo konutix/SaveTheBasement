@@ -31,9 +31,15 @@ if(collision_point(mouse_x, mouse_y, self, false, false) && !ob_levelDiscardedIc
 	
 		}
 		
+		instance_deactivate_layer("cards");
+		instance_deactivate_layer("gui");
+		
 		showDeck = true;
 	
 	}else{
+	
+		instance_activate_layer("cards")
+		instance_activate_layer("gui")
 	
 		with(ob_deckShowCard){
 			instance_destroy();

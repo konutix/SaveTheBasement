@@ -26,7 +26,7 @@ if(roomType == roomType.level){
 	
 	instance_create_layer(room_width - 120, 40, "gui", ob_levelBackToMenu);
 	
-	instance_create_layer(0, room_height, "cards", ob_levelDeckIcon);
-	instance_create_layer(room_width, room_height, "cards", ob_levelDiscardedIcon);
+	instance_create_depth(0, room_height, 110, ob_levelDeckIcon);
+	instance_create_depth(room_width, room_height, 110, ob_levelDiscardedIcon);
 	
 }
