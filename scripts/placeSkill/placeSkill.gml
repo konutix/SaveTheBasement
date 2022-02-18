@@ -14,8 +14,8 @@ function placeSkill(){
 			normChargeVecX = chargeVecX / chargeVecLen;
 			normChargeVecY = chargeVecY / chargeVecLen;
 			
-			projectile.velX = normChargeVecX * (projectile.spd + min(maxCharge, chargeVecLen) * powerScale);
-			projectile.velY = normChargeVecY * (projectile.spd + min(maxCharge, chargeVecLen) * powerScale);
+			projectile.velX = normChargeVecX * (projectile.spd + maxCharge * powerScale);
+			projectile.velY = normChargeVecY * (projectile.spd + maxCharge * powerScale);
 			
 			projectile.owner = ob_player;
 			
@@ -35,8 +35,8 @@ function placeSkill(){
 			normChargeVecX = chargeVecX / chargeVecLen;
 			normChargeVecY = chargeVecY / chargeVecLen;
 			
-			projectile.velX = normChargeVecX * (projectile.spd + min(maxCharge, chargeVecLen) * powerScale);
-			projectile.velY = normChargeVecY * (projectile.spd + min(maxCharge, chargeVecLen) * powerScale);
+			projectile.velX = normChargeVecX * (projectile.spd + maxCharge * powerScale);
+			projectile.velY = normChargeVecY * (projectile.spd + maxCharge * powerScale);
 			
 			projectile.owner = ob_player;
 			

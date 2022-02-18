@@ -13,6 +13,9 @@ if(roomType == roomType.level){
 	ds_list_copy(drawPile, deck);
 	ds_list_shuffle(drawPile);
 
+	//change deck for puzzle
+	puzzle_cards();
+
 	//creating lists for hand, discarded and destroyed cards
 	hand = ds_list_create();
 

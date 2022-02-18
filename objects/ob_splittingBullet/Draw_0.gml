@@ -3,5 +3,10 @@
 draw_self();
 
 if(ob_gameMaster.simulation == false){
-	draw_arrow(x, y, x + velX*8, y + velY*8, 10);
+	
+		var length = sqrt(velX*velX+velY*velY);
+	var normX = velX/length;
+	var normY =	velY/length;
+	
+	draw_dashed_line(x,y,normX,normY);
 }

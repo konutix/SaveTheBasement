@@ -8,22 +8,15 @@ if(state == state.charging){
 		chargeVecX = chargeStartX - mouse_x;
 		chargeVecY = chargeStartY - mouse_y;
 
+		chargeVecLen = sqrt(chargeVecX * chargeVecX + chargeVecY * chargeVecY);
+		
+		normVecX = chargeVecX / chargeVecLen;
+		normVecY = chargeVecY / chargeVecLen;
+
 		draw_circle_color(chargeStartX, chargeStartY, 32 * 0.3, c_white, c_white, true);
 
-		if(point_distance(mouse_x, mouse_y, chargeStartX, chargeStartY) < maxCharge){
-	
-			draw_arrow(chargeStartX, chargeStartY, chargeStartX + chargeVecX, chargeStartY + chargeVecY, 10);
+		draw_dashed_line(chargeStartX, chargeStartY, normVecX, normVecY);
 		
-		}else{
-	
-			chargeVecLen = sqrt(chargeVecX * chargeVecX + chargeVecY * chargeVecY);
-		
-			maxChargeVecX = chargeVecX / chargeVecLen * maxCharge;
-			maxChargeVecY = chargeVecY / chargeVecLen * maxCharge;
-	
-			draw_arrow(chargeStartX, chargeStartY, chargeStartX + maxChargeVecX, chargeStartY + maxChargeVecY, 10);
-	
-		}
 	}
 	
 	//spliting bullet charging
@@ -32,22 +25,14 @@ if(state == state.charging){
 		chargeVecX = chargeStartX - mouse_x;
 		chargeVecY = chargeStartY - mouse_y;
 
-		draw_circle_color(chargeStartX, chargeStartY, 32 * 0.3, c_blue, c_blue, true);
+		chargeVecLen = sqrt(chargeVecX * chargeVecX + chargeVecY * chargeVecY);
+		
+		normVecX = chargeVecX / chargeVecLen;
+		normVecY = chargeVecY / chargeVecLen;
 
-		if(point_distance(mouse_x, mouse_y, chargeStartX, chargeStartY) < maxCharge){
-	
-			draw_arrow(chargeStartX, chargeStartY, chargeStartX + chargeVecX, chargeStartY + chargeVecY, 10);
-		
-		}else{
-	
-			chargeVecLen = sqrt(chargeVecX * chargeVecX + chargeVecY * chargeVecY);
-		
-			maxChargeVecX = chargeVecX / chargeVecLen * maxCharge;
-			maxChargeVecY = chargeVecY / chargeVecLen * maxCharge;
-	
-			draw_arrow(chargeStartX, chargeStartY, chargeStartX + maxChargeVecX, chargeStartY + maxChargeVecY, 10);
-	
-		}
+		draw_circle_color(chargeStartX, chargeStartY, 32 * 0.3, c_purple, c_purple, true);
+
+		draw_dashed_line(chargeStartX, chargeStartY, normVecX, normVecY);
 	}
 	
 	//boulder bullet charging
