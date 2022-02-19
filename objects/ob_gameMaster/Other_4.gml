@@ -27,9 +27,9 @@ if(roomType == roomType.level){
 	
 	turnCounter = 0;
 	
-	instance_create_layer(room_width - 120, 40, "gui", ob_levelBackToMenu);
-	
 	instance_create_depth(0, room_height, 110, ob_levelDeckIcon);
 	instance_create_depth(room_width, room_height, 110, ob_levelDiscardedIcon);
+	
+	instance_create_depth(room_width - 120, 40, -5, ob_levelBackToMenu);
 	
 }

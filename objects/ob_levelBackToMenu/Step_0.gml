@@ -1,5 +1,7 @@
 /// @description button action
 
+y = ob_topBar.y + 48 + ob_topBar.y * 2;
+
 if(!pressed && collision_point(mouse_x, mouse_y, self, 0, false)){
 
 	image_index = 1;
