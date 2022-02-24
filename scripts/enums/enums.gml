@@ -39,7 +39,8 @@ enum roomType{
 	map,
 	reward,
 	event,
-	gameOver
+	gameOver,
+	credits
 
 }
 

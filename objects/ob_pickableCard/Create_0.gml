@@ -9,6 +9,8 @@ description = noone;
 
 image_alpha = 0;
 
+drag = false;
+
 selected = false;
 
 used = false;

@@ -1,14 +1,14 @@
 /// @description draw self and selection
 if(used){
 	
-	draw_set_alpha(0.5);
-	image_alpha = 0.5;
+	draw_set_alpha(0.4);
+	image_alpha = 0.4;
 	
 }
 else if(selected){
 	
-	draw_rectangle_color(
-			x-10,y-10,x+sprite_width+10,y+sprite_height+50,c_green,c_green,c_green,c_green,false);
+	draw_set_alpha(0.6);
+	image_alpha = 0.6;
 	
 }
 else if(placed && checkCardColl()){
@@ -18,7 +18,7 @@ else if(placed && checkCardColl()){
 }
 
 //spawn description
-if(placed && checkCardColl()){
+if(placed && !selected && !drag && checkCardColl()){
 			
 	if(description == noone){
 		description = instance_create_layer(
@@ -44,10 +44,13 @@ if(!selected and !used and (calcUsedCardsCost(cost) > ob_player.energy)) {
 
 draw_self();
 
-if(cost - ob_gameMaster.costDown <= 1){
-	draw_text_color(x+10,y+sprite_height+12,"1",c_blue,c_blue,c_blue,c_blue,1);
-}else{
-	draw_text_color(x+10,y+sprite_height+12,(cost - ob_gameMaster.costDown),c_blue,c_blue,c_blue,c_blue,1);
+//draw card cost
+if(!selected){
+	if(cost - ob_gameMaster.costDown <= 1){
+		draw_text_color(x+10,y+sprite_height+12,"1",c_blue,c_blue,c_blue,c_blue,1);
+	}else{
+		draw_text_color(x+10,y+sprite_height+12,(cost - ob_gameMaster.costDown),c_blue,c_blue,c_blue,c_blue,1);
+	}
 }
 
 draw_set_alpha(1);
